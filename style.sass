@@ -1,0 +1,447 @@
+/* SASS Variables */
+$background_color: #313332
+$font_white: #FFF
+$blue_hover: #00C7E8
+$fonts: 'Open Sans', sans-serif
+
+/* GENERAL STYLE */
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	font-family: $fonts
+
+.container
+	max-width: 1200px
+	margin: 200px auto
+
+[class*="col-"]
+	width: 100%
+	float: left
+
+
+/* COLUMN OFFSET */
+
+.col-offset-0
+	margin-left: 0%
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10
+	margin-left: 83.33%
+.col-offset-11
+	margin-left: 91.66%
+
+/* CLEARFIX */
+
+.row:before,
+.row:after
+	content: " "
+	display: table
+	clear: both
+
+
+/* LOGO IMAGE STYLE */
+
+.menu
+	margin: 0 auto
+
+header > nav img
+	height: 50px
+	margin: right
+	right: 100px
+
+
+/* NAVIGATION, LINKS */
+
+header
+	background-color: $background_color
+	height: 50px
+	nav ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		float: right
+		li
+			display: inline-block
+			a
+				line-height: 50px
+				padding: 0 20px
+				text-transform: uppercase
+				text-decoration: none
+				color: $font_white
+				display: inline-block
+			a:hover
+				background: #ccc
+
+
+/* HERO STYLE */
+
+.hero
+	position: relative
+	img
+		height: calc(100vh - 50px)
+		width: 100%
+
+
+/* TEXT ON HERO STYLE */
+
+.slogan
+	background-color: rgba(0, 0, 0, 0.3)
+	color: $font_white
+	max-width: 800px
+	padding-right: 300px
+	text-align: left
+	padding-left: 40px
+	position: absolute
+	height: 150px
+	top: 50%
+	right: 0
+	margin-top: -75px
+	h1, p
+		text-transform: uppercase
+	h1
+		font-size: 28px
+		color: rgba(255, 255, 255, 0.8)
+	p
+		font-size: 30px
+		font-weight: bold
+
+
+/* BENEFITS SECTION STYLE */
+
+.benefit .row
+	width: 100%
+	max-width: 100%
+	margin: 50px auto
+	text-align: center
+	.icon-btn
+		font-size: 125px
+		width: 180px
+		height: 200px
+		border: none
+		border-radius: 20px
+		color: $font_white
+		background-color: $background_color
+		cursor: pointer
+	.element
+		padding: 20px
+		box-sizing: border-box
+		h1
+			text-transform: uppercase
+		p
+			color: #808080
+			text-align: center
+	.element:hover h1
+		color: $blue_hover
+	.element:hover .icon-btn
+		background-color: $blue_hover
+
+/* FEATURED WORKS */
+
+.works
+	.row
+		width: 100%
+		margin: 50px auto
+		text-align: center
+	.featured h1
+		text-transform: uppercase
+		font-size: 60px
+	.featured p
+		color: #808080
+		font-size: 30px
+
+/* GALLERY STYLE */
+
+.gallery
+	max-width: 100%
+	position: relative
+	img
+		width: 100%
+		height: 260px
+	.layer
+		position: absolute
+		width: inherit
+		height: inherit
+		text-align: center
+		display: block
+		transition: 0.5s
+		line-height: 260px
+	.layer:hover
+		background-color: rgba(0, 0, 0, 0.5)
+	.layer i.fa
+		font-size: 25px
+		background-color: $font_white
+		padding: 15px
+		border-radius: 20%
+		margin: auto 5px
+		visibility: hidden
+.layer:hover i.fa
+	visibility: visible
+
+/* TEAM STYLES */
+
+.item-1
+	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAVktNek5kVDBfTzQ")
+.item-2
+	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqANGphbTIyem1FY3M")
+.item-3
+	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAekkxcEczUm95Y28")
+.item-4
+	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqASllOZllCMV9lNDg")
+
+.team [class*="col-"]
+	display: inline-block
+
+.team
+	width: 80vw
+	text-align: center
+	.person .item
+		margin: auto
+		height: 200px
+		width: 200px
+		border-radius: 50%
+		background-position: center
+		background-size: cover
+		position: relative
+	.profession
+		position: absolute
+		height: 100%
+		width: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		border-radius: 50%
+		display: none
+		text-transform: uppercase
+	.person:hover .profession
+		display: block
+		display: flex
+		justify-content: center
+		align-items: center
+		.flex-center
+			display: flex
+			justify-content: center
+			align-items: center
+			p
+				display: flex
+				font-weight: bold
+				font-size: 20px
+				text-transform: uppercase
+				color: $font_white
+.team .person .name p
+	color: #5E5E5C
+	font-weight: bold
+	font-size: 25px
+
+
+/* Tablet section */
+
+.tablet-awesome-title
+	color: $font_white
+	font-size: 30px
+	text-align: center
+.tablet
+	background-color: #828483
+	max-width: 100%
+	position: relative
+	height: 500px
+	.tablet-picture
+		box-sizing: border-box
+		position: absolute
+		bottom: 0
+	.awesome-title
+		margin-top: 30px
+		margin-left: 50%
+		h1
+			text-transform: uppercase
+			@extend .tablet-awesome-title
+		p
+			@extend .tablet-awesome-title
+
+/* Numbers DATA Container */
+
+.numbers
+	[class*="col-"]
+		text-align: center
+	.data
+		h1
+			font-size: 60px
+			font-weight: bold
+			color: $background_color
+			margin-bottom: 0
+		p
+			color: $blue_hover
+			font-size: 25px
+			text-transform: uppercase
+
+/* ABOUT STYLES */
+.about [class*="col-"] p
+	color: $font_white
+	text-align: center
+	font-size: 16px
+
+.contact
+	background-color: $background_color
+	width: 100%
+	.container
+		max-width: 100%
+	.about
+		margin-bottom: 0
+		.title h1
+			color: $font_white
+			text-align: center
+			text-transform: uppercase
+		.address-type p
+			font-weight: bold
+			text-transform: uppercase
+		.address-text p
+			text-align: left
+
+
+/* FOOTER STYLE */
+
+footer
+	width: 100%
+	height: 100%
+	color: $font_white
+	background-color: #000
+	text-align: center
+	padding: 30px
+	box-sizing: border-box
+
+
+@media (max-width: 767px)
+	/* For tablets: */
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-11
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+	header
+		height: auto
+		nav ul
+			float: none
+			li
+				display: block
+				text-align: center
+
+	.hero img
+		height: auto
+		max-width: 100%
+		display: block
+	.slogan
+		position: static
+		margin-top: 0px
+		padding-right: 0px
+		padding-left: 10px
+		text-align: center
+		padding: 30px 10px
+		height: auto
+		h1
+			margin: 10px
+		p
+			margin: 0
+
+	.tablet
+		height: auto
+		.awesome-title
+			margin-left: 0
+		.tablet-picture
+			position: static
+			text-align: center
+			img
+			box-shadow: 0px 19px 34px -11px #000000
+	.contact .about .address-text p
+		text-align: center
+
+@media (min-width: 768px) and (max-width: 1199px)
+	/* For desktop: */
+	.col-m-1
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4
+		width: 33.33%
+	.col-m-5
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
+
+@media (min-width: 1200px)
+	/* For desktop: */
+	.col-l-1
+		width: 8.33%
+	.col-l-2
+		width: 16.66%
+	.col-l-3
+		width: 25%
+	.col-l-4
+		width: 33.33%
+	.col-l-5
+		width: 41.66%
+	.col-l-6
+		width: 50%
+	.col-l-7
+		width: 58.33%
+	.col-l-8
+		width: 66.66%
+	.col-l-9
+		width: 75%
+	.col-l-10
+		width: 83.33%
+	.col-l-11
+		width: 91.66%
+	.col-l-12
+		width: 100%
+
+
